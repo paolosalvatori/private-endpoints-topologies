@@ -1,4 +1,4 @@
-# Introduction
+# Centralized vs Decentralized model for Private DNS Zones
 
 The objective of this article is to define a solution for the
 management of Azure Private Endpoints and Private DNS Zones in a complex
@@ -13,7 +13,7 @@ team defines and implements the guard rails on subscriptions in which
 the application team can operate. Application team users operate
 autonomously within those guard rails in their subscriptions. Centrally
 managed components for implementing guard rails and shared services
-include [Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview), [Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview), and shared services
+include [Management Groups](https://docs.microsoft.com/en-us/azure/governance/management-groups/overview), [Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview), [Template Specs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell), and shared services
 like the Hub virtual network, Azure Firewall, and DNS server. The goal
 is to maximize the autonomy and agility of individual application teams
 by minimizing centrally managed processes and thus reduce the
@@ -46,8 +46,7 @@ Framework](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready
 
 - Empower application teams to run, operate, and monitor their
     workloads autonomously.
-- Single control plane using Azure-native components ([Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview),
-    Policy, ARM, AAD, ASC)
+- Single control plane using Azure-native components ([Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview), [Template Specs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell), [ARM Templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/overview), [Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-whatis), [Azure Security Center](https://docs.microsoft.com/en-us/azure/security-center/security-center-introduction))
 - Supports Cloud Operating Model from the start including NetOps,
     AppOps, and DevOps
 - Sustainable and scalable across the globe
@@ -58,11 +57,11 @@ organized in hierarchy of [Management Groups](https://docs.microsoft.com/en-us/a
 Contoso built a custom datacenter control plane for Azure that
 implements infrastructure automation which includes CI/CD pipelines to
 deploy and manage Management Group hierarchies, [Azure Policies](https://docs.microsoft.com/en-us/azure/governance/policy/overview), Azure
-[Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) as well as company-wide shared services (i.e. central
+[Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) or [Template Specs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell) as well as company-wide shared services (i.e. central
 Firewalls, hub networks, cross-premises connectivity across multiple
 regions) as follows:
 
-- [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) are used to deploy patterns based on requirements to
+- [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) or [Template Specs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-specs?tabs=azure-powershell) are used to deploy patterns based on requirements to
     target landing zones. As such, [Blueprints](https://docs.microsoft.com/en-us/azure/governance/blueprints/overview) are defined and assigned
     to subscriptions handed out to application teams to enforce
     deployment of resources required for landing zones based on landing
