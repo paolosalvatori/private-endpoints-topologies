@@ -323,7 +323,7 @@ Zones and Private Endpoints.
 - Application team users don't have any permissions on the resources
     in the shared services/hub subscriptions.
 
-## Centralized Topology for managing Private DNS Zones 
+## Centralized Topology for managing Private DNS Zones
 
 The centralized topology is characterized by the following requirements
 and configurations:
@@ -547,8 +547,7 @@ central platform team.
     in the Private DNS Zones.
 - Avoids exposing the private endpoints used by a spoke virtual
     network in a workload subscription to all the other workloads
-    running on-premises or in other spoke virtual networks.**\
-    **
+    running on-premises or in other spoke virtual networks.
 
 ### Cons
 
