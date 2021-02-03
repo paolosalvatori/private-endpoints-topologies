@@ -212,7 +212,7 @@ This means that the user provisioning a Private Endpoint doesn't
 require any write permissions on the Private DNS Zone or it's A
 records.
 
-![Storage Account Private Endpoints](media\image1.png)
+![Storage Account Private Endpoints](media/image1.png)
 
 ### Samples
 
@@ -242,7 +242,7 @@ This topology is subject to change based on the architectural decision
 about adopting a centralized or decentralized model for Private DNS
 Zones and Private Endpoints.
 
-![Hub-and-Spoke Topology](media\image2.png)
+![Hub-and-Spoke Topology](media/image2.png)
 
 - Contoso implemented and deployed [Hub and Spoke network
     topology](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fcloud-adoption-framework%2Fready%2Fazure-best-practices%2Fhub-spoke-network-topology&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960486099&sdata=G6qVGTNzQ9vZexRrbXcFbAb7%2BnKgzeP40eH1LL4tOtQ%3D&reserved=0)
@@ -373,7 +373,7 @@ and configurations:
     pointing to the DNS forwarders (10.100.2.4 and 10.100.2.5) hosted in
     the hub virtual network.
 
-![Centralized Model](media\image3.png)
+![Centralized Model](media/image3.png)
 
 ### Pros
 
@@ -463,7 +463,7 @@ available
 [here](https://github.com/paolosalvatori/handle-private-endopints-events-with-event-grid)
 on GitHub.
 
-![Decentralized Model](media\image4.png)
+![Decentralized Model](media/image4.png)
 
 ## Decentralized Topology for managing Private DNS Zones
 
@@ -532,7 +532,7 @@ Hence, app users can read, create, update, and delete A records for
 the private endpoints in full autonomy without the intervention of the
 central platform team.
 
-![DNS Flow](media\image5.png)
+![DNS Flow](media/image5.png)
 
 ### Pros
 
@@ -617,7 +617,7 @@ connectivity subscription. You can use the ARM template available on
 Templates](https://github.com/Azure/azure-quickstart-templates/tree/master/201-blob-storage-private-endpoint)
 to create the
 
-![Private Link](media\image6.png)
+![Private Link](media/image6.png)
 
 ### Storage Accounts
 
@@ -632,7 +632,7 @@ via PowerShell, Azure CLI, ARM template or via the Azure Portal by
 choosing **Selected networks** under the **Firewall and virtual
 networks** blade
 
-![Firewall](media\image7.png)
+![Firewall](media/image7.png)
 
 ### Custom Policy Definitions
 
