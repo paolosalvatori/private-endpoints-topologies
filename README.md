@@ -1,4 +1,4 @@
-# Centralized vs Decentralized model for Private DNS Zones
+# Centralized vs Decentralized Private DNS Zones
 
 The objective of this article is to define a solution for the
 management of Azure Private Endpoints and Private DNS Zones in a complex
