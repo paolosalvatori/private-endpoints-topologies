@@ -1,3 +1,10 @@
+<style>
+pre code,
+.md:not(.use-csslab) pre code
+ {
+  white-space: pre-wrap;
+}
+</style>
 # Centralized vs Decentralized Private DNS Zones
 
 The objective of this article is to define a solution for the
@@ -27,7 +34,8 @@ sandboxing, and security of private endpoints. The lifecycle of the DNS
 records required by private endpoints can be entirely managed via Azure
 Policy and
 [PrivateDnsZoneGroup](https://docs.microsoft.com/en-us/azure/templates/microsoft.network/2020-05-01/privateendpoints/privatednszonegroups)
-as explained in the second part of the present article.
+as explained in the second part of the present article. For more information on DNS configuration of private endpoints, see
+[Azure Private Endpoint DNS configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns) and in particular [Virtual network and on-premises workloads using a DNS forwarder](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns#virtual-network-and-on-premises-workloads-using-a-dns-forwarder).
 
 ## Scenario
 
