@@ -1,10 +1,3 @@
-<style>
-pre code,
-.md:not(.use-csslab) pre code
- {
-  white-space: pre-wrap;
-}
-</style>
 # Centralized vs Decentralized Private DNS Zones
 
 The objective of this article is to define a solution for the
@@ -271,17 +264,14 @@ Zones and Private Endpoints.
     networks are used to enabled outbound traffic to the internet from
     any spoke virtual network.
 - There is no need to deploy Azure Firewall in the Spoke virtual
-    networks due to the principle [Only
-    Internal-facing](vscode-webview-resource://cf814202-7bce-4620-bad3-b6fd2c82d27b/file/c%3A/Projects/Equinor/Mulos/docs-mulos/network-democratization.md#principles).
+    networks due to the principle Only Internal-facing.
 - Spoke virtual networks are deployed by the platform team during the
     provisioning of the landing zone via Azure Blueprint.
 - Spoke virtual networks can be peered to the Hub virtual network or
-    virtual networks within the same Azure Subscription (see [VNet
-    Peering](vscode-webview-resource://cf814202-7bce-4620-bad3-b6fd2c82d27b/file/c%3A/Projects/Equinor/Mulos/docs-mulos/network-democratization.md#vnet-peerings)).
+    virtual networks within the same Azure Subscription.
 - Spoke virtual networks can be peered to other spoke virtual networks
     in the same region via the Azure Firewall located in the Hub virtual
-    network (see [VNet
-    Peering](vscode-webview-resource://cf814202-7bce-4620-bad3-b6fd2c82d27b/file/c%3A/Projects/Equinor/Mulos/docs-mulos/network-democratization.md#vnet-peerings)).
+    network.
 - For cross-premises name resolution, DNS settings in the virtual
     network are configured to point to custom DNS Forwarders / DNS
     Servers placed in the Hub virtual networks.
@@ -694,7 +684,8 @@ are not properly configured to use a private endpoint.
         "details": {
           "type": "Microsoft.Storage/storageAccounts/privateEndpointConnections",
           "existenceCondition": {
-            "field": "Microsoft.Storage/storageAccounts/privateEndpointConnections/privateLinkServiceConnectionState.status",
+            "field": "Microsoft.Storage/storageAccounts/privateEndpointConnections/
+                      privateLinkServiceConnectionState.status",
             "equals": "Approved"
           }
         }
@@ -771,7 +762,8 @@ public network are allowed or not by default. The policy uses the
 {
     "properties": {
       "displayName": "Deny Storage Account default with network access rule other than Deny",
-      "description": "Denies the creation of storage accounts with the default network access rule not equal to deny.",
+      "description": "Denies the creation of storage accounts with the default network 
+                      access rule not equal to deny.",
       "policyType": "Custom",
       "metadata": {
         "class": "Samples"
@@ -876,7 +868,8 @@ parameter value when deploying the policy assignment.
   "name": "CreatePrivateDnsZoneGroup",
   "properties": {
     "displayName": "Private Endpoints should use a PrivateDNSZoneGroup",
-    "description": "This policy automatically deploys a PrivateDnsZoneGroup Azure Private Endpoints of a given type.",
+    "description": "This policy automatically deploys a PrivateDnsZoneGroup 
+                    Azure Private Endpoints of a given type.",
     "policyType": "Custom",
     "mode": "Indexed",
     "metadata": {
@@ -900,7 +893,8 @@ parameter value when deploying the policy assignment.
       "privateDnsZoneId": {
         "type": "string",
         "metadata": {
-          "displayName": "Specifies the resource id of the PrivateDnsZone referenced by the PrivateDnsZoneGroup resource.",
+          "displayName": "Specifies the resource id of the PrivateDnsZone 
+                          referenced by the PrivateDnsZoneGroup resource.",
           "strongType": "Microsoft.Network/privateDnsZones"
         }
       },
@@ -938,7 +932,8 @@ parameter value when deploying the policy assignment.
           ],
           "existenceCondition": {
             "allOf": [{
-              "field": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/privateDnsZoneConfigs[*].privateDnsZoneId",
+              "field": "Microsoft.Network/privateEndpoints/privateDnsZoneGroups/
+                        privateDnsZoneConfigs[*].privateDnsZoneId",
               "equals": "[parameters('privateDnsZoneId')]"
             }]
           },
@@ -1006,18 +1001,21 @@ Here is a policy assignment for blob storage accounts:
   "properties": {
     "displayName": "Blob Storage Accounts Private Endpoints should use a 
 PrivateDNSZoneGroup ",
-    "description": "This policy automatically deploys a PrivateDnsZoneGroup for Blob Storage Accounts Private Endpoints.",
+    "description": "This policy automatically deploys a PrivateDnsZoneGroup 
+                    for Blob Storage Accounts Private Endpoints.",
     "metadata": {
       "version": "1.0.0",
       "category": "Network Democratization",
       "assignedBy": "Microsoft AGCI CE Team"
     },
-    "policyDefinitionId": "/providers/Microsoft.Management/managementgroups/Mulos/providers/Microsoft.Authorization/policyDefinitions/OP-CreatePrivateDnsZoneGroup",
+    "policyDefinitionId": "/providers/Microsoft.Management/managementgroups/
+                           Contoso/providers/Microsoft.Authorization/policyDefinitions/OP-CreatePrivateDnsZoneGroup",
     "scope": "/providers/Microsoft.Management/managementgroups/Production",
     "notScopes": [],
     "parameters": {
       "privateDnsZoneId": {
-          "value": "/subscriptions/e123a06e-e380-42e6-80c9-1aa1f5db8b1a/resourceGroups/network-ne/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
+          "value": "/subscriptions/e123a06e-e380-42e6-80c9-1aa1f5db8b1a/
+                    resourceGroups/network-ne/providers/Microsoft.Network/privateDnsZones/privatelink.blob.core.windows.net"
       },
       "groupId": {
           "value": "blob"
