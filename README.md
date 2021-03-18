@@ -75,7 +75,7 @@ regions) as follows:
     able to delegate regular AppOps or DevOps procedures to application
     teams.
 
-## Azure Private Links 
+## Azure Private Links
 
 ### Overview
 
