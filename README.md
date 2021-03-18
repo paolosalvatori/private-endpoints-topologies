@@ -1041,24 +1041,25 @@ as explained above.
 
 These articles have been used to support our analysis:
 
+- [Centralized vs Decentralized Private DNS Zones](https://github.com/paolosalvatori/private-endpoints-topologies)
 - [Enterprise-Scale - Reference Implementation](https://github.com/Azure/Enterprise-Scale)
 - [What is Azure Private
-    Link?](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fprivate-link%2Fprivate-link-overview&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960515967&sdata=jktBP2%2FwcTxeAvqRcM1b0a%2FII1vvAhSV4ruy%2BC%2FXPDA%3D&reserved=0)
+    Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
 - [What is Azure Private
-    Endpoint?](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fprivate-link%2Fprivate-endpoint-overview&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960515967&sdata=5kwW%2BJKrWagutYUcS%2F8Nxm5pHxjUIbzRwSfiH6esTsg%3D&reserved=0)
+    Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
 - [Azure Private Endpoint DNS
-    configuration](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fprivate-link%2Fprivate-endpoint-dns&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960525925&sdata=aejSib7GvSdIyqhlVZS%2BUmd2kT9BJcAyEe4pXw%2BH2pc%3D&reserved=0)
+    configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
 - [Name resolution for resources in Azure virtual
-    networks](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fvirtual-network%2Fvirtual-networks-name-resolution-for-vms-and-role-instances%23name-resolution-that-uses-your-own-dns-server&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960525925&sdata=4NSnNG%2B7XTsfk77gV9rMLmtxGNV%2BZyy5zdHkdk%2F7uj4%3D&reserved=0)
+    networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#name-resolution-that-uses-your-own-dns-server)
 - [DNS in Microsoft Azure -- Part
-    1](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjourneyofthegeek.com%2F2019%2F11%2F14%2Fdns-in-microsoft-azure-part-1%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960535881&sdata=XNcU9J7QOa3ivfBwkJexoiYiNrB41u8CR3O7lxJtdgM%3D&reserved=0)
+    1](https://journeyofthegeek.com/2019/11/14/dns-in-microsoft-azure-part-1/)
 - [DNS in Microsoft Azure -- Part
-    2](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjourneyofthegeek.com%2F2019%2F11%2F21%2Fdns-in-microsoft-azure-part-2%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960535881&sdata=gXbmJMz0nslkKYXMy6%2F3S1D%2BwcPy51BtuwpLyWP4guY%3D&reserved=0)
+    2](https://journeyofthegeek.com/2019/11/21/dns-in-microsoft-azure-part-2/)
 - [DNS in Microsoft Azure -- Part
-    3](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjourneyofthegeek.com%2F2019%2F11%2F24%2Fdns-in-microsoft-azure-part-3%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960545837&sdata=PRpAwa5Do%2Fw3COlcqmRdTosx7sXgahltThCnTT2nU0g%3D&reserved=0)
+    3](https://journeyofthegeek.com/2019/11/24/dns-in-microsoft-azure-part-3/)
 - [Azure Private Link and DNS -- Part
-    1](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjourneyofthegeek.com%2F2020%2F03%2F05%2Fazure-private-link-and-dns-part-1%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960545837&sdata=2fqIX7MEQxiZPqWmsu3tOH6j41sgzCXkAREyeEsC3gA%3D&reserved=0)
+    1](https://journeyofthegeek.com/2020/03/05/azure-private-link-and-dns-part-1/)
 - [Azure Private Link and DNS -- Part
-    2](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fjourneyofthegeek.com%2F2020%2F03%2F06%2Fazure-private-link-and-dns-part-2%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960545837&sdata=NnyAdwtXYepd%2BFDsQp2oylgULWAHgEv6se68DN09L2E%3D&reserved=0)
+    2](https://journeyofthegeek.com/2020/03/06/azure-private-link-and-dns-part-2/)
 - [Private Endpoint DNS Integration
-    Scenarios](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fdmauser%2FPrivateLink%2Ftree%2Fmaster%2FDNS-Integration-Scenarios&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960555795&sdata=kTm1kqNVXZK0r5Mikz7XdCe9rfJG5lHA%2FF8tNxPLwB8%3D&reserved=0)
+    Scenarios](https://github.com/dmauser/PrivateLink/tree/master/DNS-Integration-Scenarios)
