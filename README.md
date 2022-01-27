@@ -245,7 +245,7 @@ Zones and Private Endpoints.
 ![Hub-and-Spoke Topology](media/image2.png)
 
 - Contoso implemented and deployed [Hub and Spoke network
-    topology](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fazure%2Fcloud-adoption-framework%2Fready%2Fazure-best-practices%2Fhub-spoke-network-topology&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960486099&sdata=G6qVGTNzQ9vZexRrbXcFbAb7%2BnKgzeP40eH1LL4tOtQ%3D&reserved=0)
+    topology](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/hub-spoke-network-topology)
     in North Europe and Western Europe for testing.
 - A dedicated virtual network simulates the on-premises network and is
     connected via a Site-to-Site (S2S) VPN to the two Hub virtual
@@ -277,7 +277,7 @@ Zones and Private Endpoints.
     Servers placed in the Hub virtual networks.
 - These DNS Servers point to centralized Private DNS Zones to allow
     cross-premises name resolution for Private Endpoints,
-    e.g. [*privatelink.blob.core.windows.net*](https://nam06.safelinks.protection.outlook.com/?url=http%3A%2F%2Fprivatelink.blob.core.windows.net%2F&data=02%7C01%7Cpaolos%40microsoft.com%7C354ad17d5f1d47396dd408d82a153a6f%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637305617960486099&sdata=Mb1uKPtpJx5FXjO8kJJ3iwrp2mkOmka6kT2gKENdbmQ%3D&reserved=0).
+    e.g. [*privatelink.blob.core.windows.net*](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns).
 - Auto-Registration is used to allow name resolution based on the
     names of virtual machines which is required for legacy workloads.
     Application teams should be able to manage their own DNS records,
