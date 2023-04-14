@@ -220,20 +220,13 @@ The following ARM templates under Azure Quickstart Templates GitHub
 account demonstrate how to properly deploy and configure private
 endpoints on Azure:
 
-1.[Blob Storage
-    Account](https://github.com/Azure/azure-quickstart-templates/tree/master/201-blob-storage-private-endpoint)
-2.[ADLS Gen2 File
-    System](https://github.com/Azure/azure-quickstart-templates/tree/master/201-blob-storage-private-endpoint)
-3.[Service Bus
-    Namespace](https://github.com/Azure/azure-quickstart-templates/tree/master/201-servicebus-private-endpoint)
-4.[Event Hubs
-    Namespace](https://github.com/Azure/azure-quickstart-templates/tree/master/201-eventhubs-private-endpoint)
-5.[Key
-    Vault](https://github.com/Azure/azure-quickstart-templates/tree/master/201-key-vault-private-endpoint)
-6.[Cosmos
-    DB](https://github.com/Azure/azure-quickstart-templates/tree/master/101-cosmosdb-private-endpoint)
-7.[Azure SQL
-    Database](https://github.com/Azure/azure-quickstart-templates/tree/master/101-private-endpoint-sql)
+- [Azure Blob Storage Account](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/blob-storage-private-endpoint/)
+- [Azure Data Lake Storage Gen2 File System](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/blob-storage-private-endpoint/)
+- [Azure Service Bus Namespace](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/servicebus-private-endpoint/)
+- [Azure Event Hubs Namespace](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/eventhubs-private-endpoint/)
+- [Azure Key Vault](https://github.com/Azure/azure-quickstart-templates/tree/master/201-key-vault-private-endpoint)
+- [Azure Cosmos DB](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.documentdb/cosmosdb-private-endpoint)
+- [Azure SQL Database](https://learn.microsoft.com/en-us/samples/azure/azure-quickstart-templates/private-endpoint-sql/)
 
 ## Topology
 
@@ -1043,23 +1036,16 @@ These articles have been used to support our analysis:
 
 - [Centralized vs Decentralized Private DNS Zones](https://github.com/paolosalvatori/private-endpoints-topologies)
 - [Enterprise-Scale - Reference Implementation](https://github.com/Azure/Enterprise-Scale)
-- [What is Azure Private
-    Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
+- [What is Azure Private Link?](https://docs.microsoft.com/en-us/azure/private-link/private-link-overview)
 - [What is Azure Private
     Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
 - [Azure Private Endpoint DNS
     configuration](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns)
 - [Name resolution for resources in Azure virtual
     networks](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-name-resolution-for-vms-and-role-instances#name-resolution-that-uses-your-own-dns-server)
-- [DNS in Microsoft Azure -- Part
-    1](https://journeyofthegeek.com/2019/11/14/dns-in-microsoft-azure-part-1/)
-- [DNS in Microsoft Azure -- Part
-    2](https://journeyofthegeek.com/2019/11/21/dns-in-microsoft-azure-part-2/)
-- [DNS in Microsoft Azure -- Part
-    3](https://journeyofthegeek.com/2019/11/24/dns-in-microsoft-azure-part-3/)
-- [Azure Private Link and DNS -- Part
-    1](https://journeyofthegeek.com/2020/03/05/azure-private-link-and-dns-part-1/)
-- [Azure Private Link and DNS -- Part
-    2](https://journeyofthegeek.com/2020/03/06/azure-private-link-and-dns-part-2/)
-- [Private Endpoint DNS Integration
-    Scenarios](https://github.com/dmauser/PrivateLink/tree/master/DNS-Integration-Scenarios)
+- [DNS in Microsoft Azure -- Part 1](https://journeyofthegeek.com/2019/11/14/dns-in-microsoft-azure-part-1/)
+- [DNS in Microsoft Azure -- Part 2](https://journeyofthegeek.com/2019/11/21/dns-in-microsoft-azure-part-2/)
+- [DNS in Microsoft Azure -- Part 3](https://journeyofthegeek.com/2019/11/24/dns-in-microsoft-azure-part-3/)
+- [Azure Private Link and DNS -- Part 1](https://journeyofthegeek.com/2020/03/05/azure-private-link-and-dns-part-1/)
+- [Azure Private Link and DNS -- Part 2](https://journeyofthegeek.com/2020/03/06/azure-private-link-and-dns-part-2/)
+- [Private Endpoint DNS Integration Scenarios](https://github.com/dmauser/PrivateLink/tree/master/DNS-Integration-Scenarios)
